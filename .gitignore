@@ -1,3 +1,7 @@
 *.bak
 *.lib
 *~
+*.lo
+*.pyc
+*.dat
+*.o
