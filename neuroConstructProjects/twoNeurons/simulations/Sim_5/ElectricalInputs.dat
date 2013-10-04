@@ -1,0 +1,2 @@
+SampleIClamp:
+SingleElectricalInput: [Input: RandomSpikeTrain, cellGroup: PurkinjeCellGroup, cellNumber: 0, segmentId: 0, fractionAlong: 0.5]

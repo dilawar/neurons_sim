@@ -7,9 +7,11 @@ modl_reg(){
     fprintf(stderr, "Additional mechanisms from files\n");
 
     fprintf(stderr," DoubExpSyn.mod");
+    fprintf(stderr," LeakConductance.mod");
     fprintf(stderr," SingleSyn1.mod");
     fprintf(stderr, "\n");
   }
   _DoubExpSyn_reg();
+  _LeakConductance_reg();
   _SingleSyn1_reg();
 }

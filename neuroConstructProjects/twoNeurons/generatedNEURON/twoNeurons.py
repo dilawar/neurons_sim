@@ -27,7 +27,7 @@ import nrn
 sys.path.append("NeuroMLUtils")
 sys.path.append("NEURONUtils")
 
-import NetworkMLSaxHandler
+import NetworkMLHDF5Handler
 import NEURONSimUtils
 
 #  ******************************************************
@@ -53,17 +53,15 @@ def loadNetwork():
     h.load_file("PurkinjeCell_t.hoc")
     
     {load_file("SimpleCellMembrane.hoc")}
-    log.log(logging.INFO, "Loading cell positions and connections from: Generated.net.xml")
+    log.log(logging.INFO, "Loading cell positions and connections from: Generated.net.h5")
     
-    file_name = 'Generated.net.xml'
+    file_name = 'Generated.net.h5'
     
     beforeLoad = time.time()
     nmlHandler = NEURONSimUtils.NetManagerNEURON()
-    parser = xml.sax.make_parser()
-    curHandler = NetworkMLSaxHandler.NetworkMLSaxHandler(nmlHandler)
+    curHandler = NetworkMLHDF5Handler.NetworkMLHDF5Handler(nmlHandler)
     curHandler.setNodeId(-1) 
-    parser.setContentHandler(curHandler)
-    parser.parse(open(file_name)) 
+    curHandler.parse(file_name) 
     afterLoad = time.time()
     log.log(logging.INFO, "Loaded file in "+ str(afterLoad-beforeLoad)+ " seconds on host: %d" % (int(h.hostid)))
     

@@ -71,7 +71,7 @@ if (strFuncs.len(host)>0) {
 
 {use_mcell_ran4(1)}
 
-{mcell_ran4_init(959535784)}
+{mcell_ran4_init(997172005)}
 
 
 func isCellOnNode() {
@@ -163,7 +163,7 @@ thresh = -20
 delay = 0
 weight = 1
 
-access a_SimpleCellGroup[0].Soma 
+access a_PurkinjeCellGroup[0].Soma 
 spikesource_SampleIClamp[0] = new NetStim(0.5)
 
 //  NOTE: This is a very rough way to get an average rate of 0.05 kHz!!!
@@ -295,18 +295,13 @@ setuptime = stopsw()
 
 print "Setup time for simulation: ",setuptime," seconds"
 
-print "Starting simulation of duration ",tstop,"ms,  variable time step, reference: ",simReference,""
+print "Starting simulation of duration ",tstop,"ms, dt: ",dt,"ms, reference: ",simReference,""
 
 {currenttime = startsw()}
 //////////////////////////////////////////////////////////////////////
 //   Main run statement
 //////////////////////////////////////////////////////////////////////
 
-
-//  Setting basic variable time step active
-
-{cvode.active(1)}
-{cvode.atol(0.001)}
 {run()}
 
 {realruntime = startsw() - currenttime}
