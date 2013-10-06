@@ -127,14 +127,6 @@
 
                 <bio:ion_props name="na">
                     <bio:parameter name="e" value="55.0">
-                        <bio:group>soma_group</bio:group>
-                    </bio:parameter>
-                
-                    <bio:parameter name="e" value="55.0">
-                        <bio:group>dendrite_group</bio:group>
-                    </bio:parameter>
-                
-                    <bio:parameter name="e" value="55.0">
                         <bio:group>axon_group</bio:group>
                     </bio:parameter>
                 </bio:ion_props>

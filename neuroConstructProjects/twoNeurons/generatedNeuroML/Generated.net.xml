@@ -3,7 +3,7 @@
 
 <meta:notes>
 
-Network structure (NeuroML 1.x) for project: twoNeurons saved with neuroConstruct v1.7.0 on: 12:24:30, 06-Oct-13
+Network structure (NeuroML 1.x) for project: twoNeurons saved with neuroConstruct v1.7.0 on: 22:26:24, 06-Oct-13
 
 Cell Group: PurkinjeCellGroup contains 1 cells
 Cell Group: SimpleCellGroup contains 1 cells
@@ -51,9 +51,9 @@ Network connection: NetConn_SimpleCellGroup_PurkinjeCellGroup contains 1 individ
 
 
 
-        <projections units="Physiological Units">
+        <projections units="SI Units">
     <projection name="NetConn_SimpleCellGroup_PurkinjeCellGroup" source="SimpleCellGroup" target="PurkinjeCellGroup">
-        <synapse_props synapse_type="SingleSyn1" internal_delay="5.0" weight="1.0" threshold="-20.0">
+        <synapse_props synapse_type="SingleSyn1" internal_delay="0.005" weight="1.0" threshold="-0.02">
         </synapse_props>
         <connections size="1">
             <connection id="0" pre_cell_id="0" pre_segment_id="5" pre_fraction_along="0.27342016" post_cell_id="0">
@@ -62,9 +62,9 @@ Network connection: NetConn_SimpleCellGroup_PurkinjeCellGroup contains 1 individ
     </projection>
 </projections>
 
-        <inputs units="Physiological Units">
+        <inputs units="SI Units">
     <input name="SampleIClamp">
-        <random_stim frequency="0.05" synaptic_mechanism="DoubExpSyn"/>
+        <random_stim frequency="50.0" synaptic_mechanism="DoubExpSyn"/>
         <target population="PurkinjeCellGroup">
             <sites size="1">
                 <site cell_id="0" segment_id="0" fraction_along="0.5"/>
