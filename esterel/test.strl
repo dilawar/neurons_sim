@@ -1,0 +1,11 @@
+module DRIVE:
+
+task FORWARD()(integer);
+output BEEP : integer;
+return RET;
+
+emit BEEP(50);
+exec FORWARD()(3000) return RET;
+emit BEEP(30);
+
+end module
