@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Initialize store-house}{}% 1
+\BOOKMARK [1][-]{section.2}{Construct a Database/AST from XML models}{}% 2
+\BOOKMARK [1][-]{section.3}{Traub models and their translation into Python}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Database to keep the XML models}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Populate database}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Transform XML to sqlite3 queries}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Extract, Transform, and Load}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Transform XML to sqlite3 queries}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Describe and initialize database}{}% 9
+\BOOKMARK [1][-]{section.5}{AdaptorML for Moose}{}% 10
+\BOOKMARK [1][-]{section.6}{XML parser}{}% 11
+\BOOKMARK [1][-]{section.7}{Debug module, print debugging messages}{}% 12
