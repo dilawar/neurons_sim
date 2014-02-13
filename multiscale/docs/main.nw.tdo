@@ -1,4 +1,0 @@
-\contentsline {todo}{Write introduction to multiscale modelling}{1}{section*.2}
-\contentsline {todo}{Download new neuroML2 models and turn validate=True in {\normalfont \tt {}parseModels\relax \spacefactor =1000 } function call.}{3}{section*.9}
-\contentsline {todo}{Write adaptorML}{23}{section*.37}
-\contentsline {todo}{Write moose.xsd schema in ./moose\_xml/moose.xsd path.}{24}{section*.40}

@@ -1,8 +1,0 @@
-module DRIVE:
-    input a, b;
-    output o;
-    loop 
-        [ await a || await b ];
-        emit o;
-  end loop
-end module
